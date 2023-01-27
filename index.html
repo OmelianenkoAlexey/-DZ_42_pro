@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ! DZ 42 -->
+
+    <form class="form" action="" id="form">
+        <fieldset>
+            <legend>Форма</legend>
+            <label for="firstName">Ім'я</label>
+            <input type="text" id="firstName">
+
+            <label for="secondName">Прізвище</label>
+            <input type="text" id="secondName">
+
+            <label for="dateOfBirth">Дата народження</label>
+            <input type="text" id="dateOfBirth" placeholder="01.01.2000">
+
+            <label for="" id="sex">Стать</label>
+
+            <div>
+                <label for="man">Чоловік</label>
+                <input type="radio" id="man" name="sex" value="чоловік">
+            </div>
+
+            <div>
+                <label for="woman">Жінка</label>
+                <input type="radio" id="woman" name="sex" value="жінка">
+            </div>
+
+            <label for="city">Місто</label>
+            <select name="" id="city">
+                <option class="option" value="Київ">Київ</option>
+                <option class="option" value="Одеса">Одеса</option>
+                <option class="option" value="Днепр">Днепр</option>
+            </select>
+
+            <label for="address">Адреса</label>
+            <textarea name="" id="address" cols="30" rows="10" placeholder="вул. Хрещатик, буд. 5, кв. 38"></textarea>
+
+            <label for="languages" id="languages">Мови</label>
+
+            <div>
+                <label for="langUk">українська</label>
+                <input id="langUk" value="українська" type="checkbox">
+            </div>
+
+            <div>
+                <label for="langRu">російська</label>
+                <input id="langRu" value="російська" type="checkbox">
+            </div>
+
+            <div>
+                <label for="langEn">англійська</label>
+                <input id="langEn" value="англійська" type="checkbox">
+            </div>
+            <button id="button">Зберегти</button>
+        </fieldset>
+    </form>
+
+    <div class="modal-container d-none">
+        <div class="modal">
+            <div class="box-title">Ваші введені данні</div>
+            <div class="box-info" id="box-info">
+                <div class="name">Ім'я: <span id="firstNameForm"></span></div>
+                <div class="name">Прізвище: <span id="secondNameForm"></span></div>
+                <div class="name">Дата народження: <span id="dateOfBirthForm"></span></div>
+                <div class="name">Стать: <span id="sexForm"></span></div>
+                <div class="name">Місто: <span id="cityForm"></span></div>
+                <div class="name">Адреса: <span id="addressForm"></span></div>
+                <div class="name">Мова: <span id="langUkForm"></span></div>
+            </div>
+            <button id="add">Зберегти</button>
+            <button id="close">Відмінити</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
